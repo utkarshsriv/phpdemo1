@@ -22,10 +22,11 @@ echo"inserted successfully";
     echo "something went wrong";
 }
 }
-  
-public function show()
-{
-    $query="select * from students";
+
+
+
+               public function show($query){
+   
     $stmt=$this->db->prepare($query);
     $stmt->execute();
     if ($stmt->rowCount() > 0) {
@@ -79,4 +80,5 @@ public function show()
     
   }
 }
+include_once 'deleteModal.php';
 ?>

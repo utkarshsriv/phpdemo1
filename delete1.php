@@ -3,7 +3,7 @@ include_once 'conn.php';
 if(isset($_POST['submit'])){
     $id=$_GET['id'];
     $obj->delete($id);
-    header("location:index1.php");
+    header("location:index.php");
 }
 ?>
   <?php
